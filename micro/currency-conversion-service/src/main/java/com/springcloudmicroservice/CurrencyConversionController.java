@@ -36,7 +36,7 @@ public class CurrencyConversionController {
 	@GetMapping("/currency_conversion-feign/from/{from}/to/{to}/quantity/{quantity}")
 	public CurrencyConversionBean retreiveCurrencyConversionFeign(@PathVariable String from ,@PathVariable String to,
 			@PathVariable BigDecimal quantity) {
-		
+		System.out.println("hello spring boot");
 		CurrencyConversionBean response= proxy.retrieveExchangeValue(from, to);
 		return new CurrencyConversionBean(response.getId(),from,to,response.getConversionMultiple(),quantity,
 				quantity.multiply(response.getConversionMultiple()),response.getPort());
