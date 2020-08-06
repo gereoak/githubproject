@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="helloworld" />
+        <module name="helloworldboot" />
+        <module name="helloworldspringaj" />
+        <module name="helloworldspringax" />
+        <module name="helloworldspringx" />
+        <module name="springinjection" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="helloworldboot" options="-parameters" />
+      <module name="springinjection" options="-parameters" />
+    </option>
+  </component>
+</project>
